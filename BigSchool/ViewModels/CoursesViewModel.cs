@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Linq;
+using System.Web;
+using BigSchool.Models;
+
+namespace BigSchool.ViewModels
+{
+    public class CoursesViewModel
+    {
+        public IEnumerable<Course> UpcommingCourses { get; set; }
+        public bool ShowAction { get; set; }
+
+        public IEnumerable<Attendance> IsFollowCourses { get; set; }
+        public IEnumerable<Following> IsFollowLecturers { get; set; }
+    }
+}
